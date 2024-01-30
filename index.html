@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Baldwin - Technical Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Add a nav bar across the top of the page with three links to external websites -->
+    <nav>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.swiftcase.co.uk/">Swiftcase</a>
+        <a href="https://cat-bounce.com/">Cat Bounce</a>
+    </nav>
+    <h1>Sam Baldwin - Swiftcase Technical Challenge</h1>
+    <div>
+        <form>
+            <label for="productStatusID">Product Status ID</label><br/>
+            <input type="text" id="productStatusID" name="productStatusID">
+            <button onclick="validate()">submit</button>
+        </form>
+
+        <div id="modal">
+            <button id="close" onclick="closeModal()">X</button>
+            <table >
+                <thead>
+                    <th>Cost</th>
+                    <th>Date Ordered</th>
+                    <th>Cancelled</th>
+                    <th>Product Name</th>
+                    <th>Email</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+
+            <div id="costData">0</div>
+            <button onclick="uploadData()">Upload Data</button>
+            
+        </div>
+        
+
+        
+    </div>
+
+    <!-- Add any image to the bottom right of the page -->
+    <img src="raya.jpeg">
+
+    <script src="script.js"></script>
+</body>
+</html>
